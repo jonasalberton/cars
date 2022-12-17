@@ -1,11 +1,14 @@
 import { Pressable, Text } from "react-native";
 import { colors } from "../colors";
 
+interface FabButtonProps {
+  onClick: () => void
+}
 
-
-export function FabButton() {
+export function FabButton({ onClick}: FabButtonProps) {
   return (
     <Pressable
+      onPress={onClick}
       style={{
         backgroundColor: colors.primary,
         width: 60,
