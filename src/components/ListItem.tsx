@@ -47,7 +47,8 @@ const styles = StyleSheet.create({
     borderRadius: 5,
   },
   row: {
-    flexDirection: 'row'
+    flexDirection: 'row',
+    justifyContent: 'space-between'
   },
   label: {
     color: colors.white,
